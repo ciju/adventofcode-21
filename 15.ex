@@ -5,9 +5,6 @@ defmodule PQ do
     %PQ{}
   end
 
-  def empty?(%PQ{size: 0}), do: true
-  def empty?(%PQ{size: _}), do: false
-
   def pop(%PQ{size: 0}), do: nil
 
   def pop(%PQ{key_map: key_map, list: list, size: size}) do
